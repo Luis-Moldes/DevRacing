@@ -31,10 +31,62 @@ A partir de ahí, el servidor local estará en línea, generalmente en la URL ht
 ## Métodos
 ### Subir datos
 URL:
+
 Método:
+
 Datos a incluir:
+
 
 Descripción:
 
 Output (en caso de éxito):
+
+### Eliminar datos
+URL:
+
+Método:
+
+Datos a incluir:
+
+
+Descripción:
+
+Output (en caso de éxito):
+
+### Consultar piloto
+URL:
+
+Método:
+
+Datos a incluir:
+
+
+Descripción:
+
+Output (en caso de éxito):
+
+### Consultar carrera
+URL:
+
+Método:
+
+Datos a incluir:
+
+
+Descripción:
+
+Output (en caso de éxito):
+
+### Consultar clasificación general
+URL:
+
+Método:
+
+Datos a incluir:
+
+
+Descripción:
+
+Output (en caso de éxito):
+
 
