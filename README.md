@@ -16,6 +16,18 @@ Al respecto del funcionamiento interno de la API, si se requiere una descripció
  
 ## Procesos preliminares
 
+En primer lugar, se deben añadir al compilador las librerías recogidas en el archivo *requirements.txt*. Esto se puede realizar de forma conveniente mediante el comando
+```
+pip install -r requirements.txt
+```
+
+Una vez instalados, se debería poder utilizar el archivo *manage.py* para interactuar con la API. De esta manera, se puede activar la API mediante el comando
+```
+python manage.py runserver
+```
+
+A partir de ahí, el servidor local estará en línea, generalmente en la URL http://127.0.0.1:8000/, pudiéndose mandar *requests* a todos sus endopints mediante el método que más cómodo resulte.
+
 ## Métodos
 ### Subir datos
 URL:
