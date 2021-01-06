@@ -26,67 +26,62 @@ Una vez instalados, se debería poder utilizar el archivo *manage.py* para inter
 python manage.py runserver
 ```
 
-A partir de ahí, el servidor local estará en línea, generalmente en la URL http://127.0.0.1:8000/, pudiéndose mandar *requests* a todos sus endopints mediante el método que más cómodo resulte.
+A partir de ahí, el servidor local estará en línea, generalmente en la URL http://127.0.0.1:8000/ (en la descripción de cada método, esta dirección será omitida mediante "..."), pudiéndose mandar *requests* a todos sus endopints mediante el método que más cómodo resulte.
 
 ## Métodos
 ### Subir datos
-URL:
+**URL**: .../post-data/
 
-Método:
+**Método**: POST
 
-Datos a incluir:
+**Datos a incluir**: La información a añadir a la base de datos, con formato JSON en el *body* de la *request* (seleccionando la opción *raw JSON*)
 
+**Descripción**: La información es añadida a la base de datos, de forma que el resto de métodos puedan acceder a ella. La API es además capaz de detectar si los datos que se intentan subir ya se encuentran en la base de datos, advirtirndo al usuario de ello y evitando que estos datos queden duplicados.
 
-Descripción:
-
-Output (en caso de éxito):
+**Output (en caso de éxito)**: Mensaje informando de la cantidad de pilotos y carreras añadidos a la base de datos.
 
 ### Eliminar datos
-URL:
+**URL**: .../post-data/
 
-Método:
+**Método**: DELETE
 
-Datos a incluir:
+**Datos a incluir**: Ninguno
 
+**Descripción**: Se elimina toda la información de la base de datos
 
-Descripción:
-
-Output (en caso de éxito):
+**Output (en caso de éxito)**: *Todos los datos han sido eliminados*
 
 ### Consultar piloto
-URL:
+**URL**: .../get-pilot/?name=*piloto a consultar*
 
-Método:
+**Método**: GET
 
-Datos a incluir:
+**Datos a incluir**: Nombre del piloto a consultar, como parte de la URL (p.ej. http://127.0.0.1:8000/get-pilot/?name=Cooke Rivers) o en los *query parameters* de la *request* (KEY=name, VALUE=Cooke Rivers) (ambos métodos son equivalentes)
 
+**Descripción**:
 
-Descripción:
-
-Output (en caso de éxito):
+**Output (en caso de éxito)**:
 
 ### Consultar carrera
-URL:
+**URL**: .../post-data/
 
-Método:
+**Método**: GET
 
-Datos a incluir:
+**Datos a incluir**: Ninguno
 
+**Descripción**:
 
-Descripción:
-
-Output (en caso de éxito):
+**Output (en caso de éxito)**:
 
 ### Consultar clasificación general
-URL:
+**URL**: .../post-data/
 
-Método:
+**Método**: GET
 
-Datos a incluir:
+**Datos a incluir**: Ninguno
 
+**Descripción**:
 
-Descripción:
-
-Output (en caso de éxito):
+**Output (en caso de éxito)**:
 
 
